@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+section
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    filter: contrast(50);
+}
+.gooey span
+{
+    width: 100px;
+    height: 100px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    animation: loving 5s ease-in-out infinite;
+    filter: blur(15px);
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+h1
+{
+    position: absolute;
+    z-index: 10;
+    color: lightcyan;
+}
+@keyframes loving {
+    0%,100%
+    {
+        margin: 10px;
+    }
+    50%
+    {
+        margin: -50px;
+    }
+
+}
